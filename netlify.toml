@@ -1,15 +1,17 @@
 [build]
-  command = "npm run build"
+  command = "echo 'Build complete'"
   functions = "netlify/functions"
   publish = "."
-
-[dev]
-  command = "netlify dev"
 
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/login.html"
+  status = 404
 
 [functions]
   node_bundler = "esbuild"
