@@ -1,0 +1,23 @@
+{
+  "name": "csc426-login-app",
+  "version": "1.0.0",
+  "description": "Web-based login authentication application for CSC426",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "netlify dev",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "netlify deploy --prod"
+  },
+  "keywords": [
+    "login",
+    "authentication",
+    "web",
+    "netlify"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  }
+}
